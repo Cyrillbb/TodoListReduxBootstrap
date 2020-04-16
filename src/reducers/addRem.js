@@ -9,7 +9,7 @@ export const addRem = (state = initialState, action) => {
         return [...state, action.payload]
 
         case(REMOVE_TODO):
-        return state.filter(item => !item.entry)
+        return state.filter(item => item.entry !== action.payload)
         
         default:
             return state
