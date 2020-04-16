@@ -1,16 +1,23 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { TODO_TYPES } from './../actions/constants';
+import { getTodo } from '../actions/actions'
+
 
 function List(props) {
     return (
-        <div>
-            <li className="list-group">
-                {props.todos.filter(item => item.type === TODO_TYPES.PLANNED).map(item => 
-                    <li className="list-group-item">{item.entry}</li>
-                )
-                }
-            </li>
+        <div className="list-group" style={{ "width": '400px', 'margin': '20px' }}>
+            <div className="list-group-item list-group-item-action active">
+                {props.name}
+            </div>
+            {props.todos.filter(item => item.categ === props.type)
+                .map(item =>
+                    <button key={item.entry}
+                    data-toggle="modal" data-target="#todoForm"
+                    onClick={() => props.get(item.entry, item.categ)}
+                        className="list-group-item list-group-item-action"
+                    >
+                        {item.entry}
+                    </button>)}
         </div>
     )
 }
@@ -21,4 +28,10 @@ const mapStateToProps = ({ todos }) => {
     }
 }
 
-export default connect(mapStateToProps, null)(List)
+const mapDispatchToProps = dispatch => {
+    return {
+        get: (entry, categ) => dispatch(getTodo(entry, categ))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(List)

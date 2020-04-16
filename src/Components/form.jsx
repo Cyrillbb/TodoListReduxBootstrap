@@ -37,7 +37,7 @@ function Form(props) {
                         <select className="form-control" id="todoType" onChange={(event) => setOpt(event.target.value)}>
                             <option value={TODO_TYPES.PLANNED}>Planned</option>
                             <option value={TODO_TYPES.IN_THE_WORKS}>In the works</option>
-                            <option value={TODO_TYPES.DONE}>Done</option>
+                            <option value={TODO_TYPES.DROPPED}>Dropped</option>
                             <option value={TODO_TYPES.COMPLETED}>Completed</option>
                         </select>
                     </div>

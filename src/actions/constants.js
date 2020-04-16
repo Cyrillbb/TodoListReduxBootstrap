@@ -1,6 +1,6 @@
 export const TODO_TYPES = {
-    PLANNED: 'PLANNED',
-    IN_THE_WORKS: 'IN_THE_WORKS',
-    DONE: 'DONE',
-    COMPLETED: 'COMPLETED'
+    PLANNED: 'Planned',
+    IN_THE_WORKS: 'In the works',
+    DROPPED: 'Dropped',
+    COMPLETED: 'Completed'
 }
