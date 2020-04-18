@@ -10,8 +10,8 @@ function List(props) {
                 {props.name}
             </div>
             {props.todos.filter(item => item.categ === props.type)
-                .map(item =>
-                    <button key={item.entry}
+                .map((item, i) =>
+                    <button key={i}
                     data-toggle="modal" data-target="#todoForm"
                     onClick={() => props.get(item.entry, item.categ)}
                         className="list-group-item list-group-item-action"

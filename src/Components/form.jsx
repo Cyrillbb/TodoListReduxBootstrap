@@ -10,7 +10,7 @@ function Form(props) {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        if(input.length > 0)
+        if(input.length > 0 && props.todos.find(item => item.entry === input) === undefined)
         props.add(input, opt)
     }
 
@@ -51,10 +51,16 @@ function Form(props) {
     )
 }
 
+const mapStateToProps = state => {
+    return {
+        todos: state.todos
+    }
+}
+
 const mapDispatchToProps = dispatch => {
     return {
         add: (item, type) => dispatch(add(item, type))
     }
 }
 
-export default connect(null, mapDispatchToProps)(Form)
+export default connect(mapStateToProps, mapDispatchToProps)(Form)
