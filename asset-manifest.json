@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/TodoListReduxBootstrap/static/css/main.70838d6a.chunk.css",
+    "main.js": "/TodoListReduxBootstrap/static/js/main.b970ea62.chunk.js",
+    "main.js.map": "/TodoListReduxBootstrap/static/js/main.b970ea62.chunk.js.map",
+    "runtime-main.js": "/TodoListReduxBootstrap/static/js/runtime-main.985d7ccf.js",
+    "runtime-main.js.map": "/TodoListReduxBootstrap/static/js/runtime-main.985d7ccf.js.map",
+    "static/js/2.28468c9b.chunk.js": "/TodoListReduxBootstrap/static/js/2.28468c9b.chunk.js",
+    "static/js/2.28468c9b.chunk.js.map": "/TodoListReduxBootstrap/static/js/2.28468c9b.chunk.js.map",
+    "index.html": "/TodoListReduxBootstrap/index.html",
+    "precache-manifest.b2589a37b1c7690736fd5d1065bf645e.js": "/TodoListReduxBootstrap/precache-manifest.b2589a37b1c7690736fd5d1065bf645e.js",
+    "service-worker.js": "/TodoListReduxBootstrap/service-worker.js",
+    "static/css/main.70838d6a.chunk.css.map": "/TodoListReduxBootstrap/static/css/main.70838d6a.chunk.css.map",
+    "static/js/2.28468c9b.chunk.js.LICENSE.txt": "/TodoListReduxBootstrap/static/js/2.28468c9b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.985d7ccf.js",
+    "static/js/2.28468c9b.chunk.js",
+    "static/css/main.70838d6a.chunk.css",
+    "static/js/main.b970ea62.chunk.js"
+  ]
+}
