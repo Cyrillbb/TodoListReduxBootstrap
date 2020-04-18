@@ -2,6 +2,7 @@
 export const ADD_TODO = 'ADD_TODO'
 export const REMOVE_TODO = 'REMOVE_TODO'
 export const GET_TODO = 'GET_TODO'
+export const GET_LOCAL = 'GET_LOCAL'
 
 //action creators
 
@@ -29,5 +30,12 @@ export const getTodo = (entry, categ) => {
             entry: entry,
             categ: categ,
         }
+    }
+}
+
+export const getLocal = () => {
+    return {
+        type: GET_LOCAL,
+        payload: JSON.parse(localStorage.getItem('todos'))
     }
 }

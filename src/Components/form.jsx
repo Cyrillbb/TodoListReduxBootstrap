@@ -1,22 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { add } from './../actions/actions';
 import { connect } from 'react-redux';
 import { useState } from 'react';
 import { TODO_TYPES } from './../actions/constants';
+import { setLocal } from './../actions/utility';
 
 function Form(props) {
     const [input, setInp] = useState('')
     const [opt, setOpt] = useState(TODO_TYPES.PLANNED)
+    useEffect(() => {
+        if (props.todos.length > 0) {
+            setLocal(props.todos)
+        }            
+    }, [props])
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        if(input.length > 0 && props.todos.find(item => item.entry === input) === undefined)
-        props.add(input, opt)
+        if (input.length > 0 && props.todos.find(item => item.entry === input) === undefined)
+            props.add(input, opt)
     }
 
     return (
         <div className='modal' id="addTodoForm" role="dialog">
-            <div className='modal-dialog-centered modal-sm' style={{'margin': 'auto'}}>
+            <div className='modal-dialog-centered modal-sm' style={{ 'margin': 'auto' }}>
                 <form
                     className="modal-content"
                     tabIndex="-1" role="dialog"
@@ -59,7 +65,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        add: (item, type) => dispatch(add(item, type))
+        add: (item, type) => dispatch(add(item, type)),        
     }
 }
 

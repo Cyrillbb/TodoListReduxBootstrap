@@ -28,7 +28,8 @@ function TodoForm(props) {
                                 data-dismiss="modal"
                                 onClick={() => {
                                     props.removeTodo(props.todo.entry);
-                                    props.addTodo(props.todo.entry, categ)
+                                    props.addTodo(props.todo.entry, categ);
+                                   
                                 }}
                             >
                                 Move to
@@ -36,7 +37,10 @@ function TodoForm(props) {
                             <button
                                 type="button"
                                 className="btn btn-danger"
-                                onClick={() => props.removeTodo(props.todo.entry)}
+                                onClick={() => {
+                                    props.removeTodo(props.todo.entry)
+                                    if(props.todos.length === 1) localStorage.clear()
+                                }}
                                 data-dismiss='modal'
                             >
                                 Remove activity
@@ -52,7 +56,8 @@ function TodoForm(props) {
 
 const mapStateToProps = state => {
     return {
-        todo: state.todo
+        todo: state.todo,
+        todos: state.todos,
     }
 }
 
