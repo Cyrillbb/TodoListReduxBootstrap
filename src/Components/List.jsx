@@ -3,10 +3,11 @@ import { connect } from 'react-redux'
 import { getTodo } from '../actions/actions'
 
 
-function List(props) {
+function List(props) {    
+
     return (
-        <div className="list-group" style={{ "width": '400px', 'margin': '20px' }}>
-            <div className="list-group-item list-group-item-action active">
+        <div className="list-group text-break overflow-auto" style={{ "width": '400px', 'margin': '20px', 'maxHeight': '800px' }}>
+            <div className="list-group-item list-group-item-action active ">
                 {props.name}
             </div>
             {props.todos.filter(item => item.categ === props.type)

@@ -14,7 +14,7 @@ function TodoForm(props) {
                         <div className="modal-header">
                             <h5 className="modal-title" id="exampleModalLabel">Activity category: {props.todo.categ}</h5>
                         </div>
-                        <div className="modal-body">
+                        <div className="modal-body text-break">
                             {props.todo.entry}
                         </div>
                         <div className="modal-footer">

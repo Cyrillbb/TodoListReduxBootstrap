@@ -16,7 +16,7 @@ function Main(props) {
     return (
         <div>
             <Header />
-            <div style={{
+            <div id='listGroup' style={{
                 'display': 'flex',
                 'flexDirection': 'row',
                 'justifyContent': 'center',
