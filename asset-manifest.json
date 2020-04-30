@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/TodoListReduxBootstrap/static/css/main.70838d6a.chunk.css",
-    "main.js": "/TodoListReduxBootstrap/static/js/main.7611e8ca.chunk.js",
-    "main.js.map": "/TodoListReduxBootstrap/static/js/main.7611e8ca.chunk.js.map",
+    "main.js": "/TodoListReduxBootstrap/static/js/main.3d1b8a9d.chunk.js",
+    "main.js.map": "/TodoListReduxBootstrap/static/js/main.3d1b8a9d.chunk.js.map",
     "runtime-main.js": "/TodoListReduxBootstrap/static/js/runtime-main.985d7ccf.js",
     "runtime-main.js.map": "/TodoListReduxBootstrap/static/js/runtime-main.985d7ccf.js.map",
     "static/js/2.14b815ae.chunk.js": "/TodoListReduxBootstrap/static/js/2.14b815ae.chunk.js",
     "static/js/2.14b815ae.chunk.js.map": "/TodoListReduxBootstrap/static/js/2.14b815ae.chunk.js.map",
     "index.html": "/TodoListReduxBootstrap/index.html",
-    "precache-manifest.cee4aa340332b100eb502637f68f27bb.js": "/TodoListReduxBootstrap/precache-manifest.cee4aa340332b100eb502637f68f27bb.js",
+    "precache-manifest.37a84f33e12c27f03737732549b69137.js": "/TodoListReduxBootstrap/precache-manifest.37a84f33e12c27f03737732549b69137.js",
     "service-worker.js": "/TodoListReduxBootstrap/service-worker.js",
     "static/css/main.70838d6a.chunk.css.map": "/TodoListReduxBootstrap/static/css/main.70838d6a.chunk.css.map",
     "static/js/2.14b815ae.chunk.js.LICENSE.txt": "/TodoListReduxBootstrap/static/js/2.14b815ae.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.985d7ccf.js",
     "static/js/2.14b815ae.chunk.js",
     "static/css/main.70838d6a.chunk.css",
-    "static/js/main.7611e8ca.chunk.js"
+    "static/js/main.3d1b8a9d.chunk.js"
   ]
 }
