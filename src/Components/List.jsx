@@ -7,7 +7,7 @@ function List(props) {
 
     return (
         <div className="list-group text-break overflow-auto" style={{ "width": '400px', 'margin': '20px', 'maxHeight': '800px' }}>
-            <div className="list-group-item list-group-item-action active ">
+            <div className="list-group-item list-group-item-action active sticky-top ">
                 {props.name}
             </div>
             {props.todos.filter(item => item.categ === props.type)
