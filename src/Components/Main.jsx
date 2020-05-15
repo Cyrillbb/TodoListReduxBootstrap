@@ -9,10 +9,13 @@ import { getLocal } from '../actions/actions';
 
 
 function Main(props) {
+
+    const { getLoc } = props
+
     useEffect(() => {
         if (localStorage.getItem('todos'))
-            props.getLoc()
-    }, [])
+            getLoc()
+    }, [getLoc])
     return (
         <div>
             <Header />

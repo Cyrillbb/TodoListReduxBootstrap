@@ -10,7 +10,7 @@ function List(props) {
 
     return (
         <div className="list-group text-break overflow-auto" 
-        style={{ "width": '400px', 'margin': '20px', 'maxHeight': '800px' }}
+        style={{ "width": '400px', 'margin': '20px', 'maxHeight': '800px', "scrollbarWidth": 'thin' }}
         onDragOver={allowDrop}
         onDrop={(e) => {
             e.preventDefault()
